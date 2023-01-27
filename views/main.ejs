@@ -1,0 +1,106 @@
+<%- include('partials/header') %>
+
+    <section class="glass">
+        <div class="dashboard">
+            <div class="user">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="profilePic" style="height: 4rem; width: 4rem; border-radius: 50%;">
+                <h3><%= user %> </h3>
+                <p>Stage: <%= stage %> </p>
+            </div>
+            <div class="links">
+                <div class="link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/189/189664.png" style="width: 3rem;" alt="">
+                    <h2><a href="/main/<%= id %> /about-us">About us</a></h2>
+                </div>
+                <div class="link">
+                    <img src="/images/upcoming.png" alt="">
+                    <h2><a href="/main/<%= id %>/Mr-Parabola">Mr. parabola</a></h2>
+                </div>
+                <div class="link">
+                    <img src="https://img.icons8.com/fluency/96/null/chatbot.png" style="width: 3rem;" />
+                    <h2><a href="/main/<%= id %>/bot">Telegram bot</a></h2>
+                </div>
+            </div>
+            <div class="pro">
+                <a href="https://t.me/alwaece">
+                    <h2>Join our memes channel</h2>
+                    <img src="https://www.pngmart.com/files/11/Doge-Meme-PNG-Photo.png"
+                        style="width: 8rem; height: 8rem;" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="posts">
+            <div class="status">
+                <h1>Library</h1>
+                <input type="text" name="searchBar" id="" placeholder="Search">
+            </div>
+            <div class="cards">
+                <a href="">
+                    <div class="card">
+                        <img src="https://images.squarespace-cdn.com/content/v1/53472e1fe4b039879a5867c0/1602515447418-Y2ITR0OCCDTPT934SK6R/math.png" alt="">
+                        <div class="card-info">
+                            <h2>Mathmatics I</h2>
+                            <p>Stage 1</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="precentage">60%</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2432/2432572.png" alt="">
+                        <div class="card-info">
+                            <h2>Electronic I</h2>
+                            <p>Stage 1</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="precentage">60%</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/675/675846.png" alt="">
+                        <div class="card-info">
+                            <h2>Circuits I</h2>
+                            <p>Stage 1</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="precentage">60%</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2362/2362366.png" alt="">
+                        <div class="card-info">
+                            <h2>Programming</h2>
+                            <p>Stage 1</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="precentage">60%</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <img src="https://static.thenounproject.com/png/411962-200.png" alt="">
+                        <div class="card-info">
+                            <h2>Logic gates</h2>
+                            <p>Stage 1</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="precentage">60%</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <img src="https://static.thenounproject.com/png/1752803-200.png" alt="">
+                        <div class="card-info">
+                            <h2>Energy Conversions</h2>
+                            <p>Stage 1</p>
+                            <div class="progress"></div>
+                        </div>
+                        <h2 class="precentage">60%</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <%- include('partials/footer') %>

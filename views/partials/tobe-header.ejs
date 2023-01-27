@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href= <%= icon  %> >
+    <title>
+        <%= pageName %>
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: rgb(0, 0, 0);
+            display: flex;
+            min-height: 90vh;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            display: inline-flex;
+        }
+
+        .wrapper .static {
+            color: #008080;
+            font-size: 2.5rem;
+        }
+
+        .wrapper .dynamic {
+            margin-left: 10px;
+        }
+
+        .dynamic li {
+            list-style: none;
+            font-size: 2.5rem;
+            color: #008080;
+        }
+
+        .dynamic li span {
+            position: relative;
+        }
+
+        .dynamic li span::after {
+            content: "";
+            position: absolute;
+            height: 120%;
+            width: 100%;
+            background: #000000;
+            border-left: 2px solid #DDDBCB;
+            left: 0;
+            animation: typing 2.5s steps(20) infinite;
+        }
+
+        @keyframes typing {
+            100% {
+                left: 100%;
+                margin: 0 -35px 0 35px
+            }
+        }
+    </style>
+</head>
+
+<body>

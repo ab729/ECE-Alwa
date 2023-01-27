@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+    <section class="signup-pannel">
+        <h2 style="padding: 0.5rem 0 2rem 0; font-size: 40px; color: white;">Sign up</h2>
+        <form action="/sign-up" method="post">
+            <div class="container">
+                <input type="text" name="userName" id="" placeholder="User name" minlength="4" maxlength="20" required="true">
+                <input type="password" name="Password" id="" placeholder="Password"  minlength="8" maxlength="15"  style="margin-top: 0.8rem;" required="true">
+                <input type="text" name="nameInArabic" id="" placeholder="Third name in arabic"  minlength="8" maxlength="20" required="true">
+                <select name="satge" id="" required="true">
+                    <option value="0">--Choose your stage--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <button class="btn" type="submit" name="button">Sign up</button>
+        </form>
+<%- include('partials/footer') %>

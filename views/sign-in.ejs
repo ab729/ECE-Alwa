@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+    
+        <% if (qs.isCompleted === 'true') { %>
+            <script>
+                swal({
+                    title: "All done!",
+                    text: "You have been registred, plase sign in now!",
+                    icon: "success",
+                });
+            </script>
+            <% } %>
+        <% if (qs.userError === 'true') { %>
+            <script>
+                swal({
+                    title: "Error!",
+                    text: "User is not exsisted, plase sign up first!",
+                    icon: "info",
+                    });
+            </script>
+            <% } %>
+        <% if (qs.passError=== 'true') { %>
+            <script>
+                swal({
+                    title: "Error!",
+                    text: "The password You have entred, is incorrect!",
+                    icon: "error",
+                    });
+            </script>
+            <% } %>
+        
+
+    <section class="signin-pannel">
+        <h2 style="padding: 0.5rem 0 2rem 0; font-size: 40px; color: white;">Sign in</h2>
+        <form action="/sign-in" method="post">
+            <div class="container">
+                <input type="text" name="userName" id="" placeholder="User Name" required="true">
+                <input type="password" name="Password" id="" placeholder="Password" required="true" style="margin-top: 0.8rem;">
+            </div>
+            <button class="btn" type="submit" name="button">Sign in</button>
+        </form>
+        <a href="/sign-up">Sign up</a>
+
+
+
+<%- include('partials/footer') %> 
