@@ -8,7 +8,7 @@ This website was made as a task, thee main idea behind it is enabling members to
 
 
 Technolgies used:-
-  a- back end with node js (express) 
-  b- view ngine for the front end 
-  c-json web token auth
+  a- back end with node js (express)\n
+  b- view ngine for the front end \n
+  c-json web token auth\n
   d- mongo db 
